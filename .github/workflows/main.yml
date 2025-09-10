@@ -15,9 +15,9 @@ jobs:
           password: qwer1234
           port: 105
           script: |
-            rm -rf ./demo30
+            rm -rf ./distribution
             git clone https://github.com/junsun-yeam/distribution.git
-            cd ./demo30
+            cd ./distribution
             chmod 755 ./gradlew
             ./gradlew bootJar
             docker rm -f back
